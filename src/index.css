@@ -1,0 +1,67 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+:root{
+    
+    background: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    
+    background-color: #ffffff;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    
+}
+/* Add this in your Tailwind CSS or create a custom stylesheet */
+@keyframes lineAnim {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+.underlinebtn-word {
+    position: relative;
+    display: inline-block;
+}
+
+/* Create an underline using the ::after pseudo-element */
+.underlinebtn-word::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    /* Adjust the thickness of the underline as needed */
+    background-color: #cd5ff8;
+    /* Adjust the color as needed */
+    transition: width 0.3s ease;
+    /* Animation duration and easing */
+}
+
+/* Apply the animation when hovering over the word */
+.underlinebtn-word:hover::after {
+    width: 100%;
+    /* Full width of the word */
+}
+
+  
