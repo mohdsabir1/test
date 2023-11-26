@@ -2,7 +2,7 @@ import React from 'react'
 import Online from '../assets/Projects/online.png'
 import Contract from '../assets/Projects/contract.png'
 import Capline from '../assets/Projects/capline.png'
-import Shopping from '../assets/Projects/shoping.PNG'
+import Shopping from '../assets/Projects/shoping.png'
 
 export const ProjectCards = () => {
     return (
